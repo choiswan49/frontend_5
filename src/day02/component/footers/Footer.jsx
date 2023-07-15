@@ -1,11 +1,10 @@
 import React from 'react'
 import './Footer.css'
 
-const Footer = () => {
-    const today = new Date();
+const Footer = (props) => {
   return (
     <footer>
-        copyright &copy; {today.getFullYear()}
+        copyright &copy; {props.year}
     </footer>
   )
 }
