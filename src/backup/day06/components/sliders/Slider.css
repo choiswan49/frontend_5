@@ -1,0 +1,32 @@
+.slider-container{
+    width: 100%;
+    position: relative;
+    height: 450px;
+    /* display: flex; */
+}
+.slider-box{
+    width: 400%;
+    display: flex;
+    position: absolute;
+    transition: 0.4s;
+}
+.slider-img{
+    width: 25%;
+    height: 450px;
+}
+
+.slider-container .btns{
+    width: 97%;
+    position: absolute;
+    top: 275px;
+    /* transform: translateY(-50%); */
+    z-index: 99;
+    font-size: 40px;
+}
+.slider-container .right-btn{
+    position: absolute;
+    right: 0;
+}
+.btn.active{
+    display: none;
+}

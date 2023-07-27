@@ -1,0 +1,17 @@
+.sidebar-container{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    right: -300px; top: 0;
+    z-index: 99;
+    background-color: skyblue;
+    transition: 0.4s;
+}
+.sidebar-container.active{
+    right: 0;
+}
+
+.sideBtn{
+    position: absolute;
+    left: -20px;
+}

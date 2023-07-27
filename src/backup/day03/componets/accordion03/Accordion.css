@@ -1,0 +1,21 @@
+.accrodion-container{
+    width: 600px;
+    margin: auto;
+}
+
+/* .accrodion-container .content{
+    display: none;
+}
+.accrodion-container .content.active{
+    display: block;
+} */
+.accrodion-container .content{
+    background-color: antiquewhite;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.accrodion-container .content.active{
+    background-color: antiquewhite;
+    height: 70px;
+}

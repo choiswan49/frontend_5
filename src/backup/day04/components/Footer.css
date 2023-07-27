@@ -1,0 +1,30 @@
+footer{
+    /* position: relative; */
+    position: fixed;
+    bottom : 0;
+}
+.footer-container{
+    height: 100px;
+    width: 1600px;
+    margin: auto;
+    line-height: 100px;
+}
+@media screen and (max-width: 1650px) {
+    .header-container{
+        width: 98%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header-container{
+        background-color: pink;
+    }
+}
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 480px) {
+    
+}

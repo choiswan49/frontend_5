@@ -1,0 +1,11 @@
+.collepse{
+    width: 600px;
+    margin: auto;
+}
+
+.collepse .content{
+    display: none;
+}
+.collepse .content.active{
+    display: block;
+}

@@ -1,0 +1,24 @@
+.indecator{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    list-style-type: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.indecator li{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 0;
+}
+.indecator li.active::after{
+    content: '';
+    display: block;
+    width: 20px; height: 20px;
+    background-color: black;
+    border-radius: 20px;
+}

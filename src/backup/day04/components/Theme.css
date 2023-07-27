@@ -1,0 +1,25 @@
+.themeBtn{
+    position: fixed;
+    right: 1rem;
+    top: 1.5rem;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 1650px) {
+    .header-container{
+        width: 98%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header-container{
+        background-color: pink;
+    }
+}
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 480px) {
+    
+}

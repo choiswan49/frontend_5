@@ -1,0 +1,63 @@
+.tabs-container{
+    width: 600px;
+    margin: auto; 
+    display: flex;
+    height: 250px;  
+    flex-direction: column;
+    position: relative;
+}
+.tab-btns{
+    position: absolute;
+    bottom: 0;
+}
+.tab-btns,
+.tab-btns li{
+    display: flex;
+    gap: 20px;
+}
+.tab-btns li{
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid lightgray;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+.tab-btns li.active{
+    background-color: lightgray;
+}
+.tab-contents{
+    position: relative;
+}
+.tab-contents>div{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: lightgray;
+    opacity: 0;
+    transition: 0.4s;
+}
+.tab-contents>div.active{
+    opacity: 100;
+}
+.side-container{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 350px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.side-container>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+}
+.side-container>div.active{
+    left: 0;
+    transition: 0.4s;
+}

@@ -1,0 +1,32 @@
+header{
+    height: 70px;
+    border-bottom: 1px solid #efefef;
+}
+.header-container{
+    width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: skyblue; */
+    height: 100%;
+    align-items: center;
+}
+@media screen and (max-width: 1650px) {
+    .header-container{
+        width: 98%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header-container{
+        background-color: pink;
+    }
+}
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 480px) {
+    
+}

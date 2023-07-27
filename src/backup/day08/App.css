@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #333;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Link 별도로 디자인 X */
+a{
+    text-decoration: none;
+    color:inherit
+}
+
+a:hover{
+    color: red;
+}
+
+li{
+    list-style: none;
+}
+
+.lnb ul{
+    display: flex;
+}
+
+.lnb a{
+    display: block;
+    padding: 10px 20px;
+}
+
+.lnb a::after{
+    content: '';
+    display: block;
+}
+
+.lnb a:hover::after{
+    border-bottom: 2px solid red;
+
+}
+
+button{
+    width: 150px;
+    padding: 5px 0;
+}
+
+.subMenu{
+    display: flex;
+    justify-content: center;
+}
+
+.subMenu a{
+    display: block;
+    padding: 5px 10px;
+}
+
+.lnb a.hello{
+    background-color: green;
+}
+
+.subMenu a.hello{
+    background-color: green;
+}
+/* .lnb a.active{
+    background-color: green;
+}
+
+.subMenu a.active{
+    background-color: green;
+} */
