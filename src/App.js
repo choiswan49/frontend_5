@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import {
@@ -7,8 +7,10 @@ import {
   Footer,
   NavBar
 } from './components/index'
-import { ThemeContext } from './contexts/ThemeContext';
 import { AuthContext } from './contexts/AuthContext';
+import {format} from 'date-fns'
+import { useNavigate } from 'react-router-dom';
+import PostLayout from './layouts/PostLayout';
 
 import  {
   Main,
@@ -17,11 +19,13 @@ import  {
   Posts,
   PostDetail,
   NotFound,
-  Login
+  Login,
+  NewPost
 } from './routes'
 
+
 const App = () => {
-  const {darkmode} = useContext(ThemeContext)
+  const {user} = useContext(AuthContext)
   return (
     <>
     <Header />
@@ -30,9 +34,20 @@ const App = () => {
       <Route path='/' element={<Main />} />
       <Route path='/main' element={<Main />} />
       <Route path='/coins' element={<Coins />} />
-      <Route path='/coins/coindetail' element={<CoinDetail />} />
-      <Route path='/posts' element={<Posts />} />
-      <Route path='/posts/postdetail' element={<PostDetail />} />
+      <Route path='/coins/:id' element={<CoinDetail />} />
+
+      <Route path='/posts' 
+              relative='path'
+              element={<PostLayout />}>
+        <Route index element={
+          <Posts/>
+        }/>
+        <Route path=':id' element={<PostDetail/>} />
+        <Route path='newpost' element={
+          <NewPost/>} 
+        />
+      </Route>
+      
       <Route path='/login' element={<Login />} />
       <Route path='/*' element={<NotFound />} />
     </Routes>

@@ -1,0 +1,22 @@
+.coins-container{
+    width: 1200px;
+    margin: auto;
+}
+
+.coins-container table{
+    border-collapse: collapse;
+}
+
+.coins-container td{
+    border: 1px solid gray;
+    padding: 5px 10px;
+}
+
+.coins-select{
+    border: 1px solid gray;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+/* .coins-select.actvie{
+    margin-bottom: 50px;
+} */

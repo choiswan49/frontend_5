@@ -5,6 +5,7 @@ import Posts from './Posts'
 import PostDetail from './PostDetail'
 import NotFound from './NotFound'
 import Login from './Login'
+import NewPost from './NewPost'
 
 export {
     Main,
@@ -13,5 +14,6 @@ export {
     Posts,
     PostDetail,
     NotFound,
-    Login
+    Login,
+    NewPost
 }
